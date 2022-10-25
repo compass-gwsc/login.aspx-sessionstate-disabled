@@ -1,0 +1,154 @@
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 16px;
+    font: inherit;
+}
+@media screen and (min-width: 500px)  {
+.loginFormContainer {
+    padding: 2.5rem;
+    width: 20rem;
+    
+}}
+div {
+    display: block;
+}
+body {
+    height: 92%;
+    color: #303030;
+    box-sizing: border-box;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 19rem;
+    max-height: 100%;
+    margin: 0.35rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 2rem 2rem;
+    box-shadow: 0px 7px 16px rgb(80 80 80 / 45%);
+    align-self: center;
+}
+.schoolLogo {
+    background-image: url("https://gwsc-vic.compass.education/Download/Cdn/LoginPageLogo/1665610053982.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 8.75rem;
+    height: 8.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.schoolName {
+    text-align: center;
+}
+h1 {
+    display: block;
+    font-size: 1.5rem;
+    font-size: large;
+}
+h1, h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+.loginPanel {
+    display: flex;
+    flex-direction: column;
+}
+label {
+        display: block;
+        color: #3E4B62;
+}
+.textInput {
+    border: 1px solid #BFC3CB;
+    border-radius: 0.3125rem;
+    padding: 0 1.125rem;
+    height: 3rem;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.signInWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.signIn {
+    flex-grow: 1;
+    margin-right: 0;
+}
+.button {
+    border: none;
+    background-color: #0E6CD9;
+    border-radius: 0.3125rem;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+input[type="submit" i] {
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+}
+input {
+    text-transform: none;
+    text-indent: 0px;
+    display: inline-block;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+.rememberMe {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.rememberMe > input[type="checkbox"] {
+    margin: 0;
+    margin-right: 0.5rem;
+    outline: none;
+}
+.rememberMe > * {
+    cursor: pointer;
+}
+.forgottenLink {
+    margin-top: .15rem;
+    margin-bottom: .25rem;
+    float: left;
+    clear: both;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #0E6CD9;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
