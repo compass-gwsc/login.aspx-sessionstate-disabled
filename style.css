@@ -5,36 +5,36 @@
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
-}
+    font-family: 'Lato', sans-serif;
+    background-image: url("https://mail.google.com/mail/u/2?ui=2&ik=66137829f8&attid=0.1&permmsgid=msg-f:1747817263214617055&th=18417e8a6233e1df&view=att&disp=safe&realattid=f_l9qmvxtt0");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}   
 * {
     margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
-    font-size: 16px;
     font: inherit;
 }
 @media screen and (min-width: 500px)  {
-.loginFormContainer {
-    padding: 2.5rem;
-    width: 20rem;
-    
-}}
+    .formContainer {
+        padding: 2.5rem;
+        width: 20rem;
+    }
+}
 div {
     display: block;
 }
 body {
-    height: 92%;
     color: #303030;
-    box-sizing: border-box;
+    line-height: 1;
+    height: 100%;
 }
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    max-width: 19rem;
-    max-height: 100%;
-    margin: 0.35rem;
+    margin: 0.3rem;
     background-color: white;
     border-radius: 0.5rem;
     padding: 2rem 2rem;
@@ -54,11 +54,14 @@ body {
 }
 .schoolName {
     text-align: center;
+    font-size: 1.5rem;
 }
 h1 {
     display: block;
-    font-size: 1.5rem;
-    font-size: large;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 h1, h2 {
     margin-bottom: 1.5rem;
@@ -72,6 +75,10 @@ h1, h2 {
 label {
         display: block;
         color: #3E4B62;
+}
+label:not(.rememberMeLab) {
+    margin-top: .55rem;
+    margin-bottom: .65rem;
 }
 .textInput {
     border: 1px solid #BFC3CB;
@@ -111,25 +118,12 @@ input[type="submit" i] {
     text-align: center;
     box-sizing: border-box;
 }
-input {
-    text-transform: none;
-    text-indent: 0px;
-    display: inline-block;
-    cursor: text;
-    background-color: field;
-    margin: 0em;
-    padding: 1px 2px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
-}
-.rememberMe {
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+.checkBox {
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 .rememberMe > input[type="checkbox"] {
     margin: 0;
@@ -140,10 +134,10 @@ input {
     cursor: pointer;
 }
 .forgottenLink {
-    margin-top: .15rem;
+    margin-top: .25rem;
     margin-bottom: .25rem;
     float: left;
-    clear: both;
+    clear: none;
 }
 a {
     text-decoration: none;
@@ -151,4 +145,54 @@ a {
     color: #0E6CD9;
     outline: none;
     transition: box-shadow 0.2s ease;
+}
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+span {
+    display: inline;
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    appearance: auto;
+    box-sizing: border-box;
+    padding: initial;
+    border: initial;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+::placeholder {
+    font-size: .95rem;
+    padding: 5px;
+  }
+input {
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: fieldtext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    background-color: field;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
 }
