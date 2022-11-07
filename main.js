@@ -1,42 +1,18 @@
-	//Validtion Code For Inputs
-
-    var email = document.forms['form']['email'];
-    var password = document.forms['form']['password'];
-    
-    var email_error = document.getElementById('email_error');
-    var pass_error = document.getElementById('pass_error');
-    
-    email.addEventListener('textInput', email_Verify);
-    password.addEventListener('textInput', pass_Verify);
-    
-    function validated(){
-        if (email.value.length < 9) {
-            email.style.border = "1px solid red";
-            email_error.style.display = "block";
-            email.focus();
-            return false;
-        }
-        if (password.value.length < 6) {
-            password.style.border = "1px solid red";
-            pass_error.style.display = "block";
-            password.focus();
-            return false;
-        }
-    
+let count = 0
+registerForm.addEventListener('submit', (event) => {
+    event.preventDefault()
+    //insert data
+    if (!count) {
+        //error massege
+        document.querySelector('.error').style.display = 'block'
+        count++
     }
-    function email_Verify(){
-        if (email.value.length >= 8) {
-            email.style.border = "1px solid silver";
-            email_error.style.display = "none";
-            return true;
-        }
+    else 
     }
-    function pass_Verify(){
-        if (password.value.length >= 5) {
-            password.style.border = "1px solid silver";
-            pass_error.style.display = "none";
-            return true;
-        }
-    }
-    
-    
+)
+textInput = document.querySelectorAll('.textInput')
+textInput.forEach(element => {
+    element.addEventListener('click', (e) => {
+        element.style.border = '4px solid #0E6CD9;'
+    })
+});
