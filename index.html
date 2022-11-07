@@ -4,15 +4,19 @@
 	<meta charset="UTF-8">
 	<title>Validated Login Form</title>
 	<link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://mail.gwsc.vic.edu.au/owa/auth/15.1.2375/themes/resources/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background"></div>
 	<div class="main">
         <div class="formContainer">
             <div class="schoolLogo"></div>
             <div class="loginForm">
                 <h1 class="schoolName">Glen Waverley Secondary College</h1>
-                <form action="">
+                <form action="" id="registerForm">
                     <div class="loginPanel">
+                        <div id="username-error" class="error">Sorry - your username and/or password was incorrect</div>
                         <label for="username" class="username">Username</label>
                         <input type="text" name="username" autocomplete="username" class="nameInput textInput" placeholder="Username" value="">
                         <br>
@@ -21,9 +25,9 @@
                         <div class="signInWrapper">
                             <input type="submit" name="" value='Sign in' class="signIn button">
                         </div>
-                        <span class="remeberMe">
+                        <span class="checkBox">
                             <input type="checkbox" checked="checked" name="remeberMeChk" class="rememberMeChk">
-                            <label for="remeberMeChk">Remember me</label>
+                            <label for="remeberMeChk" class="rememberMeLab">Remember me</label>
                         </span>
                         <a href="#" class="forgottenLink">Can't access your account?</a>
                     </div>
